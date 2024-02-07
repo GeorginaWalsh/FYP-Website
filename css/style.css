@@ -154,6 +154,27 @@ main {
     text-align: left;
 }
 
+.btn-linkedin {
+    background-color: #0077b5; /* LinkedIn color */
+    color: white; /* Text color */
+    padding: 15px 20px; /* Padding around the button */
+    border: none; /* Remove the default border */
+    cursor: pointer; /* Change the cursor on hover */
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
 .button {
     background-color: #401f59;
     color: white;
@@ -175,4 +196,5 @@ footer {
     /* position: fixed; */
     bottom: 0;
     /* width: 100%; */
+    border-radius: 10%;
 }

@@ -18,8 +18,9 @@ body {
 
 main {
     margin: 0em 2em;
-    background-color: #90959d;
+    background-color: #d4d4d4;
     max-width: 1500px;
+    border-radius: 10%;
 }
 
 header {
@@ -27,10 +28,10 @@ header {
     z-index: 50;
     background-color: #281636;
     color: #fff;
-    text-align: center;
-    padding: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+    /* text-align: center; */
+    /* padding: 1em; */
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .heading {
@@ -43,25 +44,47 @@ header {
 
 .linksOut {
     background-color: #401f59;
-    bottom: 0%;
-    
+    /* bottom: 0%; */
+    border-radius: 10%;
+    text-align: center;
+    justify-content: center;
 }
 
 .linksOut ul {
-    display: flex;
+    display: grid;
+    padding: 1em 0em;
+    grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
     justify-content: center;
     text-align: center;
+
+}
+
+@media (max-width: 600px) { 
+    .linksOut ul {
+        grid-template-columns: 1fr;
+        margin-right: 10%;
+    }
+
+    .linksOut li {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 }
 
 .linksOut li {
     display: inline;
-    padding: 1em 4em 1em 0em;
+    padding: 0.5em 0em;
+    text-align: left;
+    justify-content: center;
 }
 
 .linksOut li:hover {
-    border: 2px solid #a483d3;
+    /* border: 2px solid #a483d3; */
+    background-image: radial-gradient(circle, #6f257a, #401f59);
     background-color: #6f257a;
+    align-items: center;
 }
 
 a {
@@ -86,47 +109,44 @@ main {
 
 .titleImageContainer {
     display: grid;
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .titleImageContainer {
-      grid-template-columns: 1fr;
-      display: flex;
-    }
+        grid-template-columns: 1fr;
+    }  
+}
 
-    .right {
-        max-width: 100%;
-        text-align: end;
-        float: right;
-    }
-
-    .left {
-        max-width: 100%;
-        float: left;
-    }
-  }
+/* @media (min-width: 400px) {
+    .titleImageContainer {
+        grid-template-columns: 1fr;
+    }  
+} */
 
 .right {
-    max-width: 50%;
+    max-width: 90%;
     text-align: end;
     float: right;
 }
 
+.image {
+    width: 75%;
+    position: relative;
+}
 
 .geor {
-    margin: 10px;
-    /* width: 70%; */
+    width:100%;
+    height:100%;
     border: 5px solid #281636;
     border-radius: 20%;
-    min-width: 40%;
-    max-width: 60%;
+    object-fit: cover;
 }
 
 .left {
-    max-width: 50%;
+    max-width: 90%;
     float: left;
 }
 

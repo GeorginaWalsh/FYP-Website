@@ -1,28 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #281636;
+}
+
+main {
+    margin: 0em 2em;
+    background-color: #90959d;
+    max-width: 1500px;
 }
 
 header {
-    background-color: #333;
+    position: relative;
+    z-index: 50;
+    background-color: #281636;
     color: #fff;
     text-align: center;
     padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
+
+.heading {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.linksOut {
+    background-color: #401f59;
+    bottom: 0%;
+    
+}
+
+.linksOut ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.linksOut li {
+    display: inline;
+    padding: 1em 4em 1em 0em;
+}
+
+.linksOut li:hover {
+    border: 2px solid #a483d3;
+    background-color: #6f257a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linksOut a {
+    color: var(--lightTwo);
+    margin-left: 4.5rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.linksOut a:hover {
+    color: var(--hoverColor);
+    transform: scale(1.05);
+  }
 
 main {
     padding: 2em;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+.titleImageContainer {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .titleImageContainer {
+      grid-template-columns: 1fr;
+      display: flex;
+    }
+
+    .right {
+        max-width: 100%;
+        text-align: end;
+        float: right;
+    }
+
+    .left {
+        max-width: 100%;
+        float: left;
+    }
+  }
+
+.right {
+    max-width: 50%;
+    text-align: end;
+    float: right;
+}
+
+
+.geor {
+    margin: 10px;
+    /* width: 70%; */
+    border: 5px solid #281636;
+    border-radius: 20%;
+    min-width: 40%;
+    max-width: 60%;
+}
+
+.left {
+    max-width: 50%;
+    float: left;
+}
+
+.centre {
+    text-align: left;
+}
+
+.button {
+    background-color: #401f59;
+    color: white;
+    padding: 0.5em;
+    margin-left: 1em;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: solid 2px #281636;
+    border-radius: 20%;
+  }
+
+footer {
+    background-color: #401f59;
+    color: #fff;
+    text-align: left;
     padding: 1em;
-    position: fixed;
+    margin: 1em 2em;
+    /* position: fixed; */
     bottom: 0;
-    width: 100%;
+    /* width: 100%; */
 }

@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    margin: 0em 2em;
+    margin: auto;
     background-color: #d4d4d4;
     max-width: 1500px;
     border-radius: 10%;
@@ -76,7 +76,7 @@ header {
 .linksOut li {
     display: inline;
     padding: 0.5em 0em;
-    text-align: left;
+    text-align: center;
     justify-content: center;
 }
 
